@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function show_confirm()
+            {
+                const r = confirm('nacisnij klawisz');
+                if (r)
+                    document.write('nacisnales ok');
+                else
+                    document.write('nacisnales cancel');
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" onclick="show_confirm()" value="pokaz confirm box" /> 
+    </body>
+</html>

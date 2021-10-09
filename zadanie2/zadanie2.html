@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            /**
+             * @argument {string} win
+             */
+            function WinOpen_toporek(win)
+            {
+                const win_no = win.match(/\d/).toString();
+                const left = win_no * 300 - 200;
+                window.open(win, `okienko${win_no}`, `toolbar=no,directories=no,menubar=no,height=400,width=160,top=350,left=${left}`);
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="button" name="grafika1" value="grafika1" onclick="WinOpen_toporek('obraz1.html')" />
+            <input type="button" name="grafika2" value="grafika2" onclick="WinOpen_toporek('obraz2.html')" />
+            <input type="button" name="grafika3" value="grafika3" onclick="WinOpen_toporek('obraz3.html')" />
+            <input type="button" name="grafika4" value="grafika4" onclick="WinOpen_toporek('obraz4.html')" />
+        </form>
+    </body>
+</html>

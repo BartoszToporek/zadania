@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function show_prompt()
+            {
+                const name = prompt('napisz imie', 'imie nazwisko');
+                if (name.length)
+                    document.write(`witaj ${name}! jak sie masz?`);
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="pokaz prompt box" onclick="show_prompt()" />
+    </body>
+</html>
